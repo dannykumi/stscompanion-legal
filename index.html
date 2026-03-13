@@ -3,23 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STS Companion — Legal</title>
+  <title>STS Companion — Bible Study Guide</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1A1A1A; background: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 24px; }
-    h1 { font-size: 28px; margin-bottom: 8px; }
-    p { color: #6B7280; font-size: 15px; margin-bottom: 32px; }
-    .links { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
-    a { display: inline-block; padding: 12px 28px; background: #D4A843; color: #fff; border-radius: 24px; text-decoration: none; font-size: 15px; font-weight: 600; }
-    a:hover { background: #c0952f; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #E8E0F0;
+      background: #1a0a2e;
+      min-height: 100vh;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 24px 48px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .hero-icon {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, #D4A843, #c0952f);
+      border-radius: 24px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.3);
+    }
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .hero .tagline {
+      font-size: 18px;
+      color: #D4A843;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .hero .desc {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #B8A8D0;
+      max-width: 480px;
+      margin: 0 auto 32px;
+    }
+
+    /* Store badges */
+    .badges {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #D4A843;
+      color: #1a0a2e;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .badge:hover { background: #e6bc5a; }
+
+    /* Features */
+    .features {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 24px 48px;
+    }
+    .features h2 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 480px) {
+      .features-grid { grid-template-columns: 1fr; }
+    }
+    .feature {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .feature-icon {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    .feature h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+    .feature p {
+      font-size: 13px;
+      color: #B8A8D0;
+      line-height: 1.5;
+    }
+
+    /* Footer / Legal */
+    .legal {
+      text-align: center;
+      padding: 32px 24px 48px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .legal a {
+      color: #D4A843;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0 12px;
+    }
+    .legal a:hover { text-decoration: underline; }
+    .legal .copy {
+      color: #6B5E80;
+      font-size: 13px;
+      margin-top: 16px;
+    }
   </style>
 </head>
 <body>
-  <h1>STS Companion</h1>
-  <p>Legal documents</p>
-  <div class="links">
-    <a href="terms.html">Terms of Service</a>
-    <a href="privacy.html">Privacy Policy</a>
-  </div>
+
+  <section class="hero">
+    <div class="hero-icon">&#128214;</div>
+    <h1>STS Companion</h1>
+    <p class="tagline">Your Bible Study Guide</p>
+    <p class="desc">
+      A study companion for the Search the Scriptures Bible study series.
+      Work through structured lessons, answer review questions, highlight
+      passages, and track your progress.
+    </p>
+    <div class="badges">
+      <a class="badge" href="#">Google Play &mdash; Coming Soon</a>
+      <a class="badge" href="#">App Store &mdash; Coming Soon</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">&#128220;</div>
+        <h3>Structured Lessons</h3>
+        <p>Navigate through sections with scripture references linked for quick lookup.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#9997;&#65039;</div>
+        <h3>Review Questions</h3>
+        <p>Answer questions for each lesson with your responses saved automatically.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#127911;</div>
+        <h3>HD Voice Read-Aloud</h3>
+        <p>Listen to lessons hands-free with adjustable speed controls.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128221;</div>
+        <h3>Highlights &amp; Notes</h3>
+        <p>Mark key passages and add personal notes as you study.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128218;</div>
+        <h3>Memory Verses</h3>
+        <p>Track and memorise key verses from each lesson.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#127912;</div>
+        <h3>Beautiful Themes</h3>
+        <p>Choose from Black, Royal, Ocean, and Forest colour themes.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="legal">
+    <div>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    <p class="copy">&copy; 2025 STS Companion. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
